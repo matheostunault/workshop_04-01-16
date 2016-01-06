@@ -1,0 +1,24 @@
+@font-face {
+    font-family: HPSimplified_Bd ;
+    src: url(../assets/fonts/HPSimplified_Bd.ttf);
+}
+@font-face {
+    font-family: HPSimplified_BdIt ;
+    src: url(../assets/fonts/HPSimplified_BdIt.ttf);
+}
+@font-face {
+    font-family: HPSimplified_It ;
+    src: url(../assets/fonts/HPSimplified_It.ttf);
+}
+@font-face {
+    font-family: HPSimplified_Lt ;
+    src: url(../assets/fonts/HPSimplified_Lt.ttf);
+}
+@font-face {
+    font-family: HPSimplified_LtIt ;
+    src: url(../assets/fonts/HPSimplified_LtIt.ttf);
+}
+@font-face {
+    font-family: HPSimplified_Rg ;
+    src: url(../assets/fonts/HPSimplified_Rg.ttf);
+}

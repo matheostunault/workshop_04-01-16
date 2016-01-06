@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -41,6 +42,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{
+	color: black;
+}
+*{
+	box-sizing:border-box;
+}
 
 /*--------------------------------------------------------------------------------------------*\
 |         -------------------------------- GLOBAL CSS --------------------------------         |
@@ -48,26 +55,148 @@ table {
 
 html{
 	font-size: 0.625rem;
+	font-family: HPSimplified_Rg;
 }
 body{
-	max-width: 1280px;
 	width: 100%;
-	margin: 0 auto;
 }
+/*section{background-color: yellow;}*/
 
 								/*------- GLOBAL CLASS -------*/
+.wrapper{
+	max-width: 1280px;
+	margin: 0 auto;
+}
 .hidden{
 	position: absolute;
 	left: -10365px;
 	height: 0px;
 }
-.h2_section{
+.align_center{
 	text-align: center;
-	font-size: 2rem;
+}
+.h2_section{
+	font-family: HPSimplified_Bd;
+	margin: 80px 0 15px;
+	font-size: 3rem;
 }
 .uppercase{
 	text-transform: uppercase;
 }
 .bold{
 	font-weight: bold;
+}
+.section_baseline{
+		font-size: 2rem;
+}
+.section{
+	margin-top: 20px;
+}
+
+/*--------------------------------------------------------------------------------------------*\
+|         --------------------------------- MAiN CSS ---------------------------------         |
+\*--------------------------------------------------------------------------------------------*/
+
+								/*------- SLIDER -------*/
+.swiper-slide{
+	width: 100%;
+	background: url(../assets/img/bgslider.jpg) no-repeat 50% 0;
+}
+#base_line{
+	margin: 350px 0;
+	font-size: 4rem;
+	color:#fff;
+}
+
+								/*------- MAIN NAV -------*/
+#main_nav ul li{
+	display: inline-block;
+	padding: 10px 20px;
+	line-height: 3rem;
+	height: auto;
+}
+#main_nav ul{
+	-webkit-box-shadow: 0 3px 2px 2px #919191;
+	box-shadow: 0 3px 2px 2px #919191;
+	text-align: center;
+	font-size: 2rem;
+}
+#main_nav #logo {
+	padding-bottom: 0px
+}
+								/*------- SERVICES -------*/
+
+#service section{
+	padding: 10px;
+	background:url(../assets/img/service-bg.png) no-repeat 100% 100%;
+}
+#service ul{
+	position: relative;
+	max-width: 50%;
+	padding: 0 5% 0 0;
+	line-height: 3rem;
+}
+#service ul li{
+	margin-top: 30px;
+}
+#service ul li img{
+	width: 7%;
+	height: 7%;
+	margin:  1% 0 3% 3%;
+}
+#service ul li div{
+	position: absolute;
+	right: 5%;
+	max-width: 84%;
+}
+#service ul li div p{
+	font-size: 1.5rem;
+}
+#service ul li img,#service ul li div{
+	display: inline-block;
+}
+#service ul h2{
+	font-size: 1.5rem
+}
+#service p:first-of-type{
+	margin-bottom: 20px;
+}
+								/*------- PORTFOLIO -------*/
+#portfolio ul li{
+	display: inline-block;
+}	
+#portfolio ul:first-of-type li {
+	font-size: 1.7rem;
+	margin: 15px;
+
+}
+#portfolio ul:first-of-type a{
+		padding: 6px 7px 7px 8px;
+}
+#portfolio ul:first-of-type a:hover, 
+#portfolio ul:first-of-type a:focus{
+	border-radius: 6px;
+	color: white;
+	background-color: #009aa6;
+
+}	
+#portfolio ul:last-of-type li{
+	width: 33%;
+	padding: 0 10px;
+}
+#portfolio ul:last-of-type li{
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 2rem;
+}							
+								/*------- CLIENTS -------*/
+#clients {
+	background-color: blue;
+}
+#clients p, #clients h3{
+	text-align: center;
+}
+#clients #clients_list li{
+	text-align: center;
+	display: inline-block;
 }

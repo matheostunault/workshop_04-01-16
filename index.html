@@ -4,68 +4,109 @@
 		<meta charset="utf-8"/>
 		<title>Beautiful</title>
 		<meta name="description" content="description de la page" />	
+		<link rel="stylesheet" type="text/css" href="css/fonts.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 	</head>
 	<body>
 		<main>
 			<!-- main content -->
 			<section id="home">
-				<h1>Bienvenue chez <span class="bold uppercase">beautiful</span></h1>
-				<a href="#">Get started</a>		
+				<div class="swiper-container">
+	    			<!-- Additional required wrapper -->
+				    <div class="swiper-wrapper">
+				        <!-- Slides -->
+				        <div class="swiper-slide">
+				        	<h1 id="base_line" class="align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
+							<p class="align_center"><a  href="#">Get started</a></p>
+						</div><div class="swiper-slide">
+				        	<h1 id="base_line" class="align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
+							<p class="align_center"><a  href="#">Get started</a></p>
+						</div><div class="swiper-slide">
+				        	<h1 id="base_line" class="align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
+							<p class="align_center"><a  href="#">Get started</a></p>
+						</div>
+				    </div>
+				    
+				    <!-- If we need navigation buttons -->
+				    <div class="swiper-button-prev"></div>
+				    <div class="swiper-button-next"></div>
+
+				</div>
+	
 				<!-- #main_nav	 -->
 				<nav id="main_nav">
 					<h2 class="hidden">navigation principale</h2>
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Service</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Clients</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Contact</a></li>
+						<li>
+							<a href="#">Home</a>
+						</li><li>
+							<a href="#">Service</a>
+						</li><li>
+							<a href="#">Portfolio</a>
+						</li><li id="logo">
+							<a href="#"><img src="assets/img/small-logo.png" alt="logo beautiful"></a>
+						</li><li>
+							<a href="#">Clients</a>
+						</li><li>
+							<a href="#">Team</a>
+						</li><li>
+							<a href="#">Contact</a>
+						</li>
 					</ul>
 				</nav>
 			</section><!-- home -->
-			<section id="service">
-				<h2 class="uppercase h2_section">Services</h2>
-				<p>We offer exceptional service with complimentary hugs.</p>
-				<ul>
-					<li>
-						<img src="assets/img/*.png" alt="logo"/>
-						<h2  class="service_h2">branding & identity</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-						</p>
-					</li><li>
-						<img src="assets/img/*.png" alt="logo"/>
-						<h2  class="service_h2">web devlopement</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-						</p>
-					</li><li>
-						<img src="assets/img/*.png" alt="logo"/>
-						<h2  class="service_h2">mobile design</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-						</p>
-					</li><li>
-						<img src="assets/img/*.png" alt="logo"/>
-						<h2  class="service_h2">24/7 support</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-						</p>
-					</li>
-				</ul>
+			<section id="service" class="wrapper">
+				<h2 class="uppercase h2_section align_center bold ">Services</h2>
+				<p class="align_center section_baseline">We offer exceptional service with complimentary hugs.</p>
+				<section>			
+					<ul>
+						<li>
+							<img src="assets/img/picto-service-1.png" alt="logo"/>
+							<div>
+								<h2  class="service_h2 uppercase bold">branding & identity</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+								</p>
+							</div>
+						</li><li>
+							<img src="assets/img/picto-service-2.png" alt="logo"/>
+							<div>
+								<h2  class="service_h2 uppercase bold">web devlopement</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+								</p>
+							</div>
+						</li><li>
+							<img src="assets/img/picto-service-3.png" alt="logo"/>
+							<div>
+								<h2  class="service_h2 uppercase bold">mobile design</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+								</p>
+							</div>
+						</li><li>
+							<img src="assets/img/picto-service-4.png" alt="logo"/>
+							<div>
+								<h2  class="service_h2 uppercase bold">24/7 support</h2>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</section>
 			</section><!-- service -->
-			<section id="portfolio">
-				<h2 class="uppercase h2_section">Portfolio</h2>
-				<p>Fresh portfolio of designs that will keep you waiting more.</p>
+			<section id="portfolio" class="wrapper">
+				<h2 class="uppercase h2_section align_center bold">Portfolio</h2>
+				<p class="align_center section_baseline">Fresh portfolio of designs that will keep you waiting more.</p>
 				<nav>
 					<h2 class="hidden">portfolio nav</h2>
-					<ul>
+					<ul class="align_center">
 						<li><a href="#">All</a></li>
 						<li><a href="#">Branding</a></li>
 						<li><a href="#">Web design</a></li>
@@ -74,55 +115,57 @@
 					</ul>
 					<ul>
 						<li>
-							<a href="#"><img src="assets/img/*.jpg" alt="miniature project"></a>
-							<h3>Image projet</h3>
+							<a href="#"><img src="assets/img/exemple-1.jpg" alt="miniature project"></a>
+							<h2 class="uppercase bold">Image projet</h2>
 							<p>tempor incididunt ut labore et dolore magna aliqua</p>
 						</li><li>
-							<a href="#"><img src="assets/img/*.jpg" alt="miniature project"></a>
-							<h3>Image projet</h3>
+							<a href="#"><img src="assets/img/exemple-3.jpg" alt="miniature project"></a>
+							<h2 class="uppercase bold">Image projet</h2>
 							<p>tempor incididunt ut labore et dolore magna aliqua</p>
 						</li><li>
-							<a href="#"><img src="assets/img/*.jpg" alt="miniature project"></a>
-							<h3>Image projet</h3>
+							<a href="#"><img src="assets/img/exemple-2.jpg" alt="miniature project"></a>
+							<h2 class="uppercase bold">Image projet</h2>
 							<p>tempor incididunt ut labore et dolore magna aliqua</p>
 						</li><li>
-							<a href="#"><img src="assets/img/*.jpg" alt="miniature project"></a>
-							<h3>Image projet</h3>
+							<a href="#"><img src="assets/img/exemple-2.jpg" alt="miniature project"></a>
+							<h2 class="uppercase bold">Image projet</h2>
 							<p>tempor incididunt ut labore et dolore magna aliqua</p>
 						</li><li>
-							<a href="#"><img src="assets/img/*.jpg" alt="miniature project"></a>
-							<h3>Image projet</h3>
+							<a href="#"><img src="assets/img/exemple-1.jpg" alt="miniature project"></a>
+							<h2 class="uppercase bold">Image projet</h2>
 							<p>tempor incididunt ut labore et dolore magna aliqua</p>
 						</li><li>
-							<a href="#"><img src="assets/img/*.jpg" alt="miniature project"></a>
-							<h3>Image projet</h3>
+							<a href="#"><img src="assets/img/exemple-3.jpg" alt="miniature project"></a>
+							<h2 class="uppercase bold">Image projet</h2>
 							<p>tempor incididunt ut labore et dolore magna aliqua</p>
 						</li>
 					</ul>
 				</nav>
 			</section><!-- portfolio -->
-			<section id="clients">
-				<article>
-					<p></p>
-					<img src="assets/img/*.jpg" alt="client picture">
-					<h3>James Bond</h3>
-					<p>License to drink inc.</p>
-				</article>
-				<ul id="clients_list">
-					<li><img src="" alt="logo envato"></li>
-					<li><img src="" alt="logo wordpress"></li>
-					<li><img src="" alt="logo dribbble"></li>
-					<li><img src="" alt="logo behance"></li>
-					<li><img src="" alt="logo twitter"></li>
-				</ul>
+			<section id="clients" class="wrapper">
+				<div class="">
+					<article>
+						<p>It was a pleasure to workwith the guys at Beautiful Studio. They made sure we were well fed and drunk all the time!</p>
+						<img src="assets/img/photoClient.png" alt="client picture">
+						<h3>James Bond</h3>
+						<p>License to drink inc.</p>
+					</article>
+					<ul id="clients_list">
+						<li><img src="assets/img/logo001.png" alt="logo envato"></li>
+						<li><img src="assets/img/logo002.png" alt="logo wordpress"></li>
+						<li><img src="assets/img/logo003.png" alt="logo dribbble"></li>
+						<li><img src="assets/img/logo004.png" alt="logo behance"></li>
+						<li><img src="assets/img/logo005.png" alt="logo twitter"></li>
+					</ul>
+				</div>
 			</section><!-- clients -->
-			<section id="team">
-				<h2 class="uppercase h2_section">Team</h2>
-				<p>Take a closer look into our amazing team. we won't bite.</p>
+			<section id="team" class="wrapper">
+				<h2 class="uppercase h2_section align_center bold">Team</h2>
+				<p class="align_center">Take a closer look into our amazing team. we won't bite.</p>
 			</section><!-- team -->
-			<section id="contact">
+			<section id="contact" class="wrapper">
 				<section>
-					<h2>Let's talk business.</h2>
+					<h2 class="uppercase h2_section align_center bold">Let's talk business.</h2>
 					<ul id="contact_info">
 						<li>
 							<img src="assets/img/*.png" alt="logo address">
@@ -145,7 +188,7 @@
 					<ul>
 						<li>
 							<a href="#">
-								<img src="assets/img/*.png" alt="logo facebook">
+								<img src="assets/img/*.png" alt="logo twitter">
 							</a>
 						</li><li>
 							<a href="#">
@@ -153,15 +196,15 @@
 							</a>
 						</li><li>
 							<a href="#">
-								<img src="assets/img/*.png" alt="logo facebook">
+								<img src="assets/img/*.png" alt="logo p">
 							</a>
 						</li><li>
 							<a href="#">
-								<img src="assets/img/*.png" alt="logo facebook">
+								<img src="assets/img/*.png" alt="logo google">
 							</a>
 						</li><li>
 							<a href="#">
-								<img src="assets/img/*.png" alt="logo facebook">
+								<img src="assets/img/*.png" alt="logo dribbble">
 							</a>
 						</li>
 					</ul>
@@ -177,8 +220,8 @@
 		</footer><!-- #main_footer -->
 
 
-		<script type="text/javascript"></script>
-		<script type="text/javascript"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/swiper.min.js"></script>
 		<script type="text/javascript"></script>
 		<script type="text/javascript"></script>
 	</body>
