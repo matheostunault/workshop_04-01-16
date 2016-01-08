@@ -55,7 +55,7 @@ a{
 
 html{
 	font-size: 0.625rem;
-	font-family: HPSimplified_Rg;
+	font-family: HPSimplified_Lt;
 }
 body{
 	width: 100%;
@@ -98,31 +98,53 @@ body{
 \*--------------------------------------------------------------------------------------------*/
 
 								/*------- SLIDER -------*/
-.swiper-slide{
-	width: 100%;
-	background: url(../assets/img/bgslider.jpg) no-repeat 50% 0;
+#home {
+	overflow: hidden;
 }
+.swiper-slide{
+	height: 100%;
+
+}
+.bg1 {
+	background: url(../assets/img/bgslider.jpg) no-repeat 0 0;
+	background-size: cover;
+}
+
 #base_line{
-	margin: 350px 0;
-	font-size: 4rem;
+	width: 29%;
+	padding: 1%;
+	background-color: #000000;
+	margin: 23% auto 4% auto;
+	font-size: 4.5rem;
+	color: #fff;
+}
+#start{
+	width: 14%;
+	padding: 1% 10px;
+	background-color: #009aa6;
+	margin: 0 auto 15.4% auto;
+	font-size: 3.6rem;
+	border-radius: 10px;
+}
+#start a{
 	color:#fff;
 }
 
 								/*------- MAIN NAV -------*/
 #main_nav ul li{
 	display: inline-block;
-	padding: 10px 20px;
-	line-height: 3rem;
-	height: auto;
+	padding: 10px 30px;
+	line-height: 2.5rem;
 }
 #main_nav ul{
 	-webkit-box-shadow: 0 3px 2px 2px #919191;
 	box-shadow: 0 3px 2px 2px #919191;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 3rem;
 }
-#main_nav #logo {
-	padding-bottom: 0px
+#main_nav #logo img{
+	width: 75%;
+	height: 75%;
 }
 								/*------- SERVICES -------*/
 
@@ -191,6 +213,7 @@ body{
 }							
 								/*------- CLIENTS -------*/
 #clients {
+	overflow: hidden;
 	background-color: blue;
 }
 #clients p, #clients h3{

@@ -6,31 +6,31 @@
 		<meta name="description" content="description de la page" />	
 		<link rel="stylesheet" type="text/css" href="css/fonts.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
 	</head>
 	<body>
 		<main>
 			<!-- main content -->
 			<section id="home">
-				<div class="swiper-container">
+				<div class="swiper-container-1">
 	    			<!-- Additional required wrapper -->
 				    <div class="swiper-wrapper">
 				        <!-- Slides -->
-				        <div class="swiper-slide">
-				        	<h1 id="base_line" class="align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
-							<p class="align_center"><a  href="#">Get started</a></p>
-						</div><div class="swiper-slide">
-				        	<h1 id="base_line" class="align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
-							<p class="align_center"><a  href="#">Get started</a></p>
-						</div><div class="swiper-slide">
-				        	<h1 id="base_line" class="align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
-							<p class="align_center"><a  href="#">Get started</a></p>
+				        <div class="swiper-slide bg1">				   
+				        	<h1 id="base_line" class="wrapper align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
+							<p class="align_center" id="start"><a  href="#">Get started</a></p>
+						</div><div class="swiper-slide bg1">
+				        	<h1 id="base_line" class="wrapper align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
+							<p class="align_center" id="start"><a  href="#">Get started</a></p>
+						</div><div class="swiper-slide bg1">
+				        	<h1 id="base_line" class="wrapper align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
+							<p class="align_center" id="start"><a  href="#">Get started</a></p>
 						</div>
 				    </div>
 				    
 				    <!-- If we need navigation buttons -->
-				    <div class="swiper-button-prev"></div>
-				    <div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 
 				</div>
 	
@@ -142,21 +142,45 @@
 					</ul>
 				</nav>
 			</section><!-- portfolio -->
-			<section id="clients" class="wrapper">
+			<section id="clients"   >
 				<div class="">
-					<article>
-						<p>It was a pleasure to workwith the guys at Beautiful Studio. They made sure we were well fed and drunk all the time!</p>
-						<img src="assets/img/photoClient.png" alt="client picture">
-						<h3>James Bond</h3>
-						<p>License to drink inc.</p>
-					</article>
-					<ul id="clients_list">
-						<li><img src="assets/img/logo001.png" alt="logo envato"></li>
-						<li><img src="assets/img/logo002.png" alt="logo wordpress"></li>
-						<li><img src="assets/img/logo003.png" alt="logo dribbble"></li>
-						<li><img src="assets/img/logo004.png" alt="logo behance"></li>
-						<li><img src="assets/img/logo005.png" alt="logo twitter"></li>
-					</ul>
+				<div class="swiper-container-2">
+	    			<!-- Additional required wrapper -->
+				    <div class="swiper-wrapper">
+				        <!-- Slides -->
+				        <div class="swiper-slide bg2">						
+					        <article>
+								<p>It was a pleasure to workwith the guys at Beautiful Studio. They made sure we were well fed and drunk all the time!</p>
+								<img src="assets/img/photoClient.png" alt="client picture">
+								<h3>James Bond</h3>
+								<p>License to drink inc.</p>
+							</article>			   
+				        	
+						</div><div class="swiper-slide bg2">
+							<article>
+								<p>It was a pleasure to workwith the guys at Beautiful Studio. They made sure we were well fed and drunk all the time!</p>
+								<img src="assets/img/photoClient.png" alt="client picture">
+								<h3>James Bond</h3>
+								<p>License to drink inc.</p>
+							</article>				        	
+						</div><div class="swiper-slide bg2">
+							<article>
+								<p>It was a pleasure to workwith the guys at Beautiful Studio. They made sure we were well fed and drunk all the time!</p>
+								<img src="assets/img/photoClient.png" alt="client picture">
+								<h3>James Bond</h3>
+								<p>License to drink inc.</p>
+							</article>				        	
+						</div>
+					</div>
+
+				</div>
+				<ul id="clients_list">
+					<li><img src="assets/img/logo001.png" alt="logo envato"></li>
+					<li><img src="assets/img/logo002.png" alt="logo wordpress"></li>
+					<li><img src="assets/img/logo003.png" alt="logo dribbble"></li>
+					<li><img src="assets/img/logo004.png" alt="logo behance"></li>
+					<li><img src="assets/img/logo005.png" alt="logo twitter"></li>
+				</ul>
 				</div>
 			</section><!-- clients -->
 			<section id="team" class="wrapper">
@@ -215,14 +239,14 @@
 			</section><!-- contact -->
 		</main>
 		<footer id="main_footer">
-			<img src="assets/img/*.png" alt="beautiful logo">
+			<img id="scroll" src="assets/img/*.png" alt="beautiful logo">
 			<p>Copyright &copy; | Designed by Beautiful </p>
 		</footer><!-- #main_footer -->
 
 
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/swiper.min.js"></script>
-		<script type="text/javascript"></script>
 		<script type="text/javascript"></script>
 	</body>
 </html>
