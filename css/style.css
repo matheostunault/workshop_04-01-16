@@ -77,7 +77,7 @@ body{
 }
 .h2_section{
 	font-family: HPSimplified_Bd;
-	margin: 80px 0 15px;
+	margin-bottom: 15px;
 	font-size: 3rem;
 }
 .uppercase{
@@ -87,7 +87,7 @@ body{
 	font-weight: bold;
 }
 .section_baseline{
-		font-size: 2rem;
+	font-size: 2rem;
 }
 .section{
 	margin-top: 20px;
@@ -100,6 +100,8 @@ body{
 								/*------- SLIDER -------*/
 #home {
 	overflow: hidden;
+	box-shadow: 0 3px 2px 2px #919191; 
+
 }
 .swiper-slide{
 	height: 100%;
@@ -135,18 +137,21 @@ body{
 	display: inline-block;
 	padding: 10px 30px;
 	line-height: 2.5rem;
+	vertical-align: middle;
+}
+#main_nav{
+		
 }
 #main_nav ul{
-	-webkit-box-shadow: 0 3px 2px 2px #919191;
-	box-shadow: 0 3px 2px 2px #919191;
+	padding: 13px 0;
 	text-align: center;
 	font-size: 3rem;
 }
-#main_nav #logo img{
-	width: 75%;
-	height: 75%;
-}
+
 								/*------- SERVICES -------*/
+#service {
+	margin-top: 200px;
+}
 
 #service section{
 	padding: 10px;
@@ -174,7 +179,7 @@ body{
 #service ul li div p{
 	font-size: 1.5rem;
 }
-#service ul li img,#service ul li div{
+#service ul li img, #service ul li div{
 	display: inline-block;
 }
 #service ul h2{
@@ -184,6 +189,9 @@ body{
 	margin-bottom: 20px;
 }
 								/*------- PORTFOLIO -------*/
+#portfolio{
+	margin-top: 200px;
+}
 #portfolio ul li{
 	display: inline-block;
 }	
@@ -193,11 +201,12 @@ body{
 
 }
 #portfolio ul:first-of-type a{
-		padding: 6px 7px 7px 8px;
+	padding: 6px 7px 7px 8px;
 }
 #portfolio ul:first-of-type a:hover, 
 #portfolio ul:first-of-type a:focus{
 	border-radius: 6px;
+	cursor: pointer;
 	color: white;
 	background-color: #009aa6;
 
@@ -210,16 +219,176 @@ body{
 	text-align: center;
 	font-size: 1.4rem;
 	line-height: 2rem;
-}							
+}
+#Container .mix{
+	display: none;
+}
 								/*------- CLIENTS -------*/
+.bg2 {
+	background-image: url(../assets/img/pictoClient.png) ,url(../assets/img/bgclient.jpg) ;
+	background-position: 50% 100px, 0 0 ;
+	background-repeat: no-repeat;
+	background-size: 4%, cover;
+}
 #clients {
+	margin-top: 200px;
+	width: 100%;
 	overflow: hidden;
-	background-color: blue;
 }
 #clients p, #clients h3{
+	line-height: 2;
+	text-align: center;
+	color: #ffffff;
+}
+#clients h3 {
+	font-size: 1.7rem;
+} 
+#clients p {
+	font-size: 1.7rem;
+	margin-bottom: 30px;
+}
+#clients p:first-of-type {
+	font-size: 3rem;
+	font-family: HPSimplified_Ltit;
+	display: block;
+	width: 70%;
+	margin: 210px auto 0 auto;
+}
+
+#clients #clients_list{
+	background-color: #009aa6;
 	text-align: center;
 }
 #clients #clients_list li{
-	text-align: center;
 	display: inline-block;
+	padding: 20px 30px; 
+	vertical-align: middle;
+
+}
+#clients .picture {
+	border-radius: 100%;
+	margin :30px 46.5% 10px 46.5%;
+}
+
+								/*------- TEAM -------*/
+#team{
+	margin-top: 200px;
+	overflow: hidden;
+}
+#team .picture {
+	border-radius: 100%;
+}
+
+#team .member {
+	padding: 4%;
+	text-align: center;
+}
+#team ul .member{
+	display: inline-block;
+	width: 33.33%;
+}
+#team p, #team h3 {
+	line-height: 2;
+	font-size: 2rem;
+}
+#team .member_infos{
+	font-size: 1.3rem ;
+	display: inline-block;
+	width: 80%;
+}
+.dot_pagination{
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	
+}
+								/*------- CONTACT -------*/
+#contact{
+	margin-top: 200px;
+	width: 100%;
+}
+#contact section {
+	display: inline-block;
+	width: 50%;
+}
+#contact #infos {
+	padding: 70px 0 0 8%;
+}
+#contact h2 {
+	color: #ffffff;
+	line-height: 25rem;
+	background : url(../assets/img/bgtitle-footer.png) no-repeat 0 0;
+	background-size: cover;
+}
+.infos{
+	font-size: 2rem; 
+}
+.hours{
+	display: block;
+}
+#contact_info li {
+	margin: 10px 0;
+}
+#contact_info img, #contact_info h3, #contact_info p{
+	display: inline-block;
+}
+#contact_info img {
+	vertical-align: top;
+	width :2%;
+	margin: 0 3%;
+}
+#contact_info h3 {
+	vertical-align: top;
+	width: 15%;
+}
+#contact_info p{ 
+	font-size: 1.3rem;
+	line-height: 1.7rem;
+}
+#social_network {
+	width: 70%;
+	margin-top:40px;
+	text-align: center;
+}
+#social_network li{
+	margin: 10px;
+	display: inline-block;
+}
+#inscription_form{
+	margin-top: 60px;
+	vertical-align: top;
+}
+#form {
+}
+#form input{
+	margin: 20px 0;
+	padding: 10px;
+	display: block;
+	width: 75%;
+}
+#form input:last-of-type {
+	width:30%;
+	background-color: #009aa6;
+	outline: none;
+	padding: 5px;
+	border-radius: 2px;
+	border:none;
+	color: #ffffff;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+#form textarea {
+	padding: 10px;
+	width: 75%;
+	resize:none;
+}
+								/*------- FOOTER -------*/
+#main_footer {
+	margin-top: 100px;
+	background-color: #000000;
+	color:#ffffff;
+	padding: 60px;
+	text-align: center;
+	font-size: 2rem;
+	line-height: 3rem; 
 }

@@ -12,6 +12,17 @@
       // Optional parameters
       direction: 'horizontal',
       autoplay: 4000,
+      spaceBetween: 400,
+      effect: 'fade',
       loop: true
-    });        
+    });     
+
+    var mySwiper3 = new Swiper ('.swiper-container-3', {
+      // Optional parameters
+      direction: 'horizontal',
+      pagination: '.swiper-pagination',
+      loop: true
+    });   
+
+    $('#Container').mixItUp();     
   });
