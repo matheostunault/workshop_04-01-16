@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Beautiful</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<meta name="description" content="description de la page" />	
-		<link rel="stylesheet" type="text/css" href="css/fonts.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/swiper.css" />
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/swiper.css" />
 	</head>
 	<body>
 		<main>
@@ -18,13 +19,13 @@
 				        <!-- Slides -->
 				        <div class="swiper-slide bg1">				   
 				        	<h1 id="base_line" class="wrapper align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
-							<p class="align_center" id="start"><a  href="#">Get started</a></p>
+							<p class="align_center" id="start"><a  href="#navigation"  class="uk-button" data-uk-smooth-scroll>Get started</a></p>
 						</div><div class="swiper-slide bg1">
 				        	<h1 id="base_line" class="wrapper align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
-							<p class="align_center" id="start"><a  href="#">Get started</a></p>
+							<p class="align_center" id="start"><a  href="#navigation"  class="uk-button" data-uk-smooth-scroll>Get started</a></p>
 						</div><div class="swiper-slide bg1">
 				        	<h1 id="base_line" class="wrapper align_center uppercase">Bienvenu chez <span class="bold">beautiful</span></h1>
-							<p class="align_center" id="start"><a  href="#">Get started</a></p>
+							<p class="align_center" id="start"><a  href="#navigation"  class="uk-button" data-uk-smooth-scroll>Get started</a></p>
 						</div>
 				    </div>
 				    
@@ -33,29 +34,29 @@
 					<div class="swiper-button-next"></div>
 
 				</div>
-	
-				<!-- #main_nav	 -->
+			</section><!-- home -->
+			<section id="navigation">
 				<nav id="main_nav">
 					<h2 class="hidden">navigation principale</h2>
-					<ul>
+					<ul class="uk-nav uk-nav-side" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true, cls:'nav_link_color',topoffset: -800}">
 						<li>
-							<a href="#">Home</a>
+							<a href="#home"  class="uk-button" data-uk-smooth-scroll="{offset= --104}">Home</a>
 						</li><li>
-							<a href="#">Service</a>
+							<a href="#service"  class="uk-button" data-uk-smooth-scroll="{offset= -104}">Service</a>
 						</li><li>
-							<a href="#">Portfolio</a>
+							<a href="#portfolio"  class="uk-button" data-uk-smooth-scroll="{offset= -104}">Portfolio</a>
 						</li><li id="logo">
-							<a href="#"><img src="assets/img/small-logo.png" alt="logo beautiful"></a>
+							<a href="#home"  class="uk-button" data-uk-smooth-scroll="{offset= -104}"><img src="assets/img/small-logo.png" alt="logo beautiful"></a>
 						</li><li>
-							<a href="#">Clients</a>
+							<a href="#clients"  class="uk-button" data-uk-smooth-scroll="{offset= -104}">Clients</a>
 						</li><li>
-							<a href="#">Team</a>
+							<a href="#team"  class="uk-button" data-uk-smooth-scroll="{offset= -104}">Team</a>
 						</li><li>
-							<a href="#">Contact</a>
+							<a href="#contact"  class="uk-button" data-uk-smooth-scroll="{offset= -104}">Contact</a>
 						</li>
 					</ul>
 				</nav>
-			</section><!-- home -->
+			</section><!-- #main_nav	 -->
 			<section id="service" class="wrapper">
 				<h2 class="uppercase h2_section align_center bold ">Services</h2>
 				<p class="align_center section_baseline">We offer exceptional service with complimentary hugs.</p>
@@ -107,50 +108,50 @@
 				<nav>
 					<h2 class="hidden">portfolio nav</h2>
 					<ul class="align_center">
-						<li>
-							<a class="filter" data-filter=".all">All</a>
-						</li><li>
-							<a class="filter" data-filter=".branding">Branding</a>
-						</li><li>
-							<a class="filter" data-filter=".web-design">Web design</a>
-						</li><li>
-							<a class="filter" data-filter=".print-design">Print design</a>
-						</li><li>
-							<a class="filter" data-filter=".photography">Photography</a>
+						<li class="filter" data-filter="all">
+							<p>All</p>
+						</li><li class="filter" data-filter=".branding">
+							<p>Branding</p>
+						</li><li class="filter" data-filter=".web-design">
+							<p> Web design</p>
+						</li><li class="filter" data-filter=".print-design">
+							<p>Print design</p>
+						</li><li class="filter" data-filter=".photography">
+							<p >Photography</p>
 						</li>
 					</ul>
 					<ul id="Container">
-						<li class="mix all print-design" data-myorder="1">
+						<li class="mix print-design" data-myorder="1">
 
 							<a href="#"><img src="assets/img/exemple-1.jpg" alt="miniature project"></a>
 							<h2 class="uppercase bold">Image projet</h2>
 							<p>tempor incididunt ut labore et dolore magna aliqua</p>
 
-						</li><li class="mix all photography" data-myorder="2">
+						</li><li class="mix photography" data-myorder="2">
 
 							<a href="#"><img src="assets/img/exemple-3.jpg" alt="miniature project"></a>
 							<h2 class="uppercase bold">Image projet</h2>
 							<p>tempor incididunt ut labore et dolore magna aliqua</p>
 
-						</li><li class="mix all branding" data-myorder="3">
+						</li><li class="mix branding" data-myorder="3">
 
 							<a href="#"><img src="assets/img/exemple-2.jpg" alt="miniature project"></a>
 							<h2 class="uppercase bold">Image projet</h2>
 							<p>tempor incididunt ut labore et dolore magna aliqua</p>
 
-						</li><li class="mix all branding" data-myorder="4">
+						</li><li class="mix branding" data-myorder="4">
 
 							<a href="#"><img src="assets/img/exemple-2.jpg" alt="miniature project"></a>
 							<h2 class="uppercase bold">Image projet</h2>
 							<p>tempor incididunt ut labore et dolore magna aliqua</p>
 
-						</li><li class="mix all print-design" data-myorder="5">
+						</li><li class="mix print-design" data-myorder="5">
 
 							<a href="#"><img src="assets/img/exemple-1.jpg" alt="miniature project"></a>
 							<h2 class="uppercase bold">Image projet</h2>
 							<p>tempor incididunt ut labore et dolore magna aliqua</p>
 
-						</li><li class="mix all photography" data-myorder="6">
+						</li><li class="mix photography" data-myorder="6">
 
 							<a href="#"><img src="assets/img/exemple-3.jpg" alt="miniature project"></a>
 							<h2 class="uppercase bold">Image projet</h2>
@@ -161,7 +162,6 @@
 				</nav>
 			</section><!-- portfolio -->
 			<section id="clients"   >
-				<div class="">
 				<div class="swiper-container-2">
 	    			<!-- Additional required wrapper -->
 				    <div class="swiper-wrapper">
@@ -183,7 +183,7 @@
 							</article>				        	
 						</div><div class="swiper-slide bg2">
 							<article>
-								<p>It was a pleasure to workwith the guys at <span class="bold">Beautiful</span> Studio. They made sure we were well fed and drunk all the time!</p>
+								<p>It was a pleasure to workwith the guys at <span class="bold">Beautiful</span> Studio. They made sure we were well fed!</p>
 								<img class="picture" src="assets/img/photoClient.png" alt="client picture">
 								<h3 class="uppercase bold">James Bond</h3>
 								<p>License to drink inc.</p>
@@ -199,7 +199,6 @@
 					<li><a href="#"><img src="assets/img/logo004.png" alt="logo behance"></a></li>
 					<li><a href="#"><img src="assets/img/logo005.png" alt="logo twitter"></a></li>
 				</ul>
-				</div>
 			</section><!-- clients -->
 
 			<section id="team" class="wrapper">
@@ -208,98 +207,52 @@
 
 				<div class="swiper-container-3">
 	    			<!-- Additional required wrapper -->
-				    <div class="swiper-wrapper">
 				        <!-- Slides -->
-				        <div class="swiper-slide">
-							<ul>
-								<li class="member">
-									<img class="picture" src="assets/img/team-1.png" alt="client picture">
-									<h3 class="uppercase bold">Walter white</h3>
-									<p>License to drink inc.</p>
-
-									<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-							
-								</li><li class="member">
-									<img class="picture" src="assets/img/team-2.png" alt="client picture">
-									<h3 class="uppercase bold">Jessy pinkman</h3>
-									<p>License to drink inc.</p>
-
-									<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-								</li><li class="member">
-									<img class="picture" src="assets/img/team-3.png" alt="client picture">
-									<h3 class="uppercase bold">Skyler white</h3>
-									<p>License to drink inc.</p>
-
-									<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-								</li>
-							</ul>
-						</div><div class="swiper-slide">
-							<ul>
-								<li class="member">
-									<img class="picture" src="assets/img/team-1.png" alt="client picture">
-									<h3 class="uppercase bold">Walter white</h3>
-									<p>License to drink inc.</p>
-
-									<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-							
-								</li><li class="member">
-									<img class="picture" src="assets/img/team-2.png" alt="client picture">
-									<h3 class="uppercase bold">Jessy pinkman</h3>
-									<p>License to drink inc.</p>
-
-									<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-								</li><li class="member">
-									<img class="picture" src="assets/img/team-3.png" alt="client picture">
-									<h3 class="uppercase bold">Skyler white</h3>
-									<p>License to drink inc.</p>
-
-									<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-								</li>
-							</ul>
-						</div><div class="swiper-slide">
-							<ul>
-								<li class="member">
-									<img class="picture" src="assets/img/team-1.png" alt="client picture">
-									<h3 class="uppercase bold">Walter white</h3>
-									<p>License to drink inc.</p>
-
-									<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-							
-								</li><li class="member">
-									<img class="picture" src="assets/img/team-2.png" alt="client picture">
-									<h3 class="uppercase bold">Jessy pinkman</h3>
-									<p>License to drink inc.</p>
-
-									<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-								</li><li class="member">
-									<img class="picture" src="assets/img/team-3.png" alt="client picture">
-									<h3 class="uppercase bold">Skyler white</h3>
-									<p>License to drink inc.</p>
-
-									<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-								</li>
-							</ul>		        	
-						</div>
-					</div>
-					<div class="swiper-pagination"></div>
+						<ul class="swiper-wrapper">
+							<li class="member swiper-slide">
+								<img class="picture" src="assets/img/team-1.png" alt="client picture">
+								<h3 class="uppercase bold">Walter white</h3>
+								<p>License to drink inc.</p>
+								<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+							</li><li class="member swiper-slide">
+								<img class="picture" src="assets/img/team-2.png" alt="client picture">
+								<h3 class="uppercase bold">Jessy pinkman</h3>
+								<p>License to drink inc.</p>
+								<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+							</li><li class="member swiper-slide">
+								<img class="picture" src="assets/img/team-3.png" alt="client picture">
+								<h3 class="uppercase bold">Skyler white</h3>
+								<p>License to drink inc.</p>
+								<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+							</li><li class="member swiper-slide">
+								<img class="picture" src="assets/img/team-1.png" alt="client picture">
+								<h3 class="uppercase bold">Walter white</h3>
+								<p>License to drink inc.</p>
+								<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+							</li><li class="member swiper-slide">
+								<img class="picture" src="assets/img/team-2.png" alt="client picture">
+								<h3 class="uppercase bold">Jessy pinkman</h3>
+								<p>License to drink inc.</p>
+								<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+							</li><li class="member swiper-slide">
+								<img class="picture" src="assets/img/team-3.png" alt="client picture">
+								<h3 class="uppercase bold">Skyler white</h3>
+								<p>License to drink inc.</p>
+								<p class="member_infos">	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+							</li>
+						</ul>
 				</div>
 			</section><!-- team -->
 
@@ -364,9 +317,10 @@
 		</footer><!-- #main_footer -->
 
 
-		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/swiper.min.js"></script>
-		<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/jquery.mixitup.js"></script>
+		<script src="js/uikit.min.js"></script>
 	</body>
 </html>

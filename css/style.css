@@ -92,6 +92,14 @@ body{
 .section{
 	margin-top: 20px;
 }
+.fixNavigation
+{ 
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	width: 100%; 
+	background-color: rgba(255,255,255, 1);
+}
 
 /*--------------------------------------------------------------------------------------------*\
 |         --------------------------------- MAiN CSS ---------------------------------         |
@@ -99,32 +107,26 @@ body{
 
 								/*------- SLIDER -------*/
 #home {
-	overflow: hidden;
-	box-shadow: 0 3px 2px 2px #919191; 
-
-}
-.swiper-slide{
 	height: 100%;
-
+	overflow: hidden;
+	position: relative;
 }
+
 .bg1 {
 	background: url(../assets/img/bgslider.jpg) no-repeat 0 0;
 	background-size: cover;
 }
 
 #base_line{
-	width: 29%;
-	padding: 1%;
 	background-color: #000000;
-	margin: 23% auto 4% auto;
+	margin: 23% 30% 4% 30%;
 	font-size: 4.5rem;
 	color: #fff;
 }
 #start{
-	width: 14%;
 	padding: 1% 10px;
 	background-color: #009aa6;
-	margin: 0 auto 15.4% auto;
+	margin: 0 35% 15.4% 35%;
 	font-size: 3.6rem;
 	border-radius: 10px;
 }
@@ -133,24 +135,28 @@ body{
 }
 
 								/*------- MAIN NAV -------*/
+#navigation{
+	box-shadow: 0 2px 3px 2px rgba(145,145,145, 0.8); 
+}
 #main_nav ul li{
 	display: inline-block;
 	padding: 10px 30px;
 	line-height: 2.5rem;
 	vertical-align: middle;
 }
-#main_nav{
-		
-}
+
 #main_nav ul{
 	padding: 13px 0;
 	text-align: center;
 	font-size: 3rem;
 }
+.nav_link_color a{
+	color: #009aa6;
+}
 
 								/*------- SERVICES -------*/
 #service {
-	margin-top: 200px;
+	padding-top: 154px;
 }
 
 #service section{
@@ -190,7 +196,7 @@ body{
 }
 								/*------- PORTFOLIO -------*/
 #portfolio{
-	margin-top: 200px;
+	padding-top: 164px;
 }
 #portfolio ul li{
 	display: inline-block;
@@ -200,12 +206,13 @@ body{
 	margin: 15px;
 
 }
-#portfolio ul:first-of-type a{
+#portfolio ul:first-of-type p{
 	padding: 6px 7px 7px 8px;
 }
-#portfolio ul:first-of-type a:hover, 
-#portfolio ul:first-of-type a:focus{
+#portfolio ul:first-of-type p:hover, 
+#portfolio ul:first-of-type p:focus{
 	border-radius: 6px;
+
 	cursor: pointer;
 	color: white;
 	background-color: #009aa6;
@@ -231,7 +238,7 @@ body{
 	background-size: 4%, cover;
 }
 #clients {
-	margin-top: 200px;
+	padding-top: 104px;
 	width: 100%;
 	overflow: hidden;
 }
@@ -272,7 +279,7 @@ body{
 
 								/*------- TEAM -------*/
 #team{
-	margin-top: 200px;
+	padding-top: 154px;
 	overflow: hidden;
 }
 #team .picture {
@@ -296,15 +303,10 @@ body{
 	display: inline-block;
 	width: 80%;
 }
-.dot_pagination{
-	width: 5px;
-	height: 5px;
-	border-radius: 50%;
-	
-}
+
 								/*------- CONTACT -------*/
 #contact{
-	margin-top: 200px;
+	padding-top: 104px;
 	width: 100%;
 }
 #contact section {
@@ -358,8 +360,6 @@ body{
 	margin-top: 60px;
 	vertical-align: top;
 }
-#form {
-}
 #form input{
 	margin: 20px 0;
 	padding: 10px;
@@ -391,4 +391,48 @@ body{
 	text-align: center;
 	font-size: 2rem;
 	line-height: 3rem; 
+}
+
+
+/*--------------------------------------------------------------------------------------------*\
+|         --------------------------------- MAiN CSS ---------------------------------         |
+\*--------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1279px) {
+	#team ul .member{
+		width: 50%;
+	}
+	#portfolio ul:last-of-type li{
+		width: 50%;
+		padding: 0 10px;
+	}
+	#service ul{
+		line-height: 2rem;
+	}
+	#service section{
+		background-size:50%;
+	}
+}
+@media (max-width: 1023px) {
+	#team ul .member{
+		width: 100%;
+	}
+	#portfolio ul:last-of-type li{
+		width: 100%;
+		padding: 0 10px;
+	}
+	#service ul{
+		line-height: 1.5rem;
+	}
+	#main_nav ul li{
+		padding: 10px 15px;
+	}
+	#main_nav ul{
+		padding: 13px 0;
+		text-align: center;
+		font-size: 2rem;
+	}
+
+}
+@media (max-width: 767px) {
 }
